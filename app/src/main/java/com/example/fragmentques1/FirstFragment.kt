@@ -32,5 +32,49 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
 
         Log.i("FRAGMENT1_LIFECYCLE", "onActivityCreated")
     }
+    
+      override fun onStart() {
+        super.onStart()
+
+        Log.i("FRAGMENT1_LIFECYCLE", "onStart")
+
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        Log.i("FRAGMENT1_LIFECYCLE", "onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+
+        Log.i("FRAGMENT1_LIFECYCLE", "onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+
+        Log.i("FRAGMENT1_LIFECYCLE", "onStop")
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+
+        Log.i("FRAGMENT1_LIFECYCLE", "onDestroyView")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        Log.i("FRAGMENT1_LIFECYCLE", "onDestroy")
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+
+        Log.i("FRAGMENT1_LIFECYCLE", "onDetach")
+    }
 
     }
